@@ -1,0 +1,16 @@
+general:
+  # Use Circle CI's automatic settings inference for the Rails app
+  build_dir: rails
+dependencies:
+  # Install Ember CLI dependencies after those for Rails
+  post:
+    - cd ../ember && npm install
+    - cd ../ember && bower install
+  # Cache the Ember CLI dependencies to speed up future builds
+  cache_directories:
+    - "../ember/node_modules"
+    - "../ember/bower_components"
+test:
+  # Run the Ember tests after the Rails tests
+  post:
+    - cd ../ember && ./node_modules/.bin/ember test
