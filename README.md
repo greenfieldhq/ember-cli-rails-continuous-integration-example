@@ -1,0 +1,1 @@
+# Ember CLI and Rails Continuous Integration Example [![Build Status](https://circleci.com/gh/greenfieldhq/ember-cli-rails-continuous-integration-example.svg?&style=shield&circle-token=7fb9350d6589d587087aab05cce56dcba616814e)](https://circleci.com/gh/greenfieldhq/ember-cli-rails-continuous-integration-example)
